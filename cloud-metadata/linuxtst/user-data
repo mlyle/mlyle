@@ -1,9 +1,12 @@
 #cloud-config
+
+password: butts
+
 chpasswd:
 	expire: False
 
 chpasswd:
-	list: |
-		root: $1$2ku0D7fM$Ial504Ymq/3caFqx2a7ZO.
+	list:
+		- root: $1$2ku0D7fM$Ial504Ymq/3caFqx2a7ZO.
 
 ssh_pwauth: True
