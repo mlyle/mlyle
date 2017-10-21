@@ -1,11 +1,6 @@
 #cloud-config
 
-chpasswd:
-	expire: False
-
-chpasswd:
-	list:
-		- root:$1$2ku0D7fM$Ial504Ymq/3caFqx2a7ZO.
-		- ubuntu:$1$2ku0D7fM$Ial504Ymq/3caFqx2a7ZO.
+ssh_authorized_keys:
+  - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC9jbAkV+l6oj7UV9T1iMhwkUpC9c9iUqvwPCLRdUhnmXLKQc4YFbz5LQH+01TM5xTBKXUAK2K83Lyuh83op6lDHsGIXiyRJQykDinizb6Wo0bhG8jn6Gd9POXzTY1GumO7vX52nCGV9Tqnw0QcW+LlloMsk5WJ0c4GfWyn9D4yd6eGrBMdJ4YKatiN7LOEVMIisGh6uCUMBz7KjsWGKp4wjDHIUXLecgXyJ2HdzJzp34uDu9KwQNKe9YCY8YZcv/E88zgz2qs6Px8/kQZRn6UnDUqoHY9aZA2PaM2AvcjSm47KCsKbxIMKlQ1oFOMxE9ZynEtnaHFuncAd/cB+vsT5 mlyle@midnight
 
 ssh_pwauth: yes
